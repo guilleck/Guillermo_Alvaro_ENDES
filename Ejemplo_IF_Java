@@ -1,0 +1,12 @@
+int n=0;
+int mayor=0;
+int menor=100;
+
+if(n>mayor) {
+				mayor=n;
+			}
+			if(n<menor) {
+				menor=n;
+			}
+System.out.println("El mayor es: "+mayor);
+System.out.println("El menor es: "+menor);
