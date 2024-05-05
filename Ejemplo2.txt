@@ -38,7 +38,7 @@ public class EjemplosArrays {
 		}
 		
 		
-		//Buscar un elemento del array
+		//Buscar un elemento del array hh
 		for (int i=0;i<notasFijas.length;i++) {
 			if (notasFijas[i]==10) {
 				System.out.println("Tiene un 10 en "+modulos[i]);
