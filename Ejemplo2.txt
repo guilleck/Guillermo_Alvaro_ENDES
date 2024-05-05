@@ -71,3 +71,60 @@ public class EjemplosArrays {
 		notasFijas[2]=(int) (1+Math.random()*10);
 	}
 }
+package Actividades;
+
+import java.util.Scanner;
+
+public class Ejercicio2Areas {
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		int opcion;
+		do {
+			System.out.println("1.Área del cuadrado");
+			System.out.println("2.Área del circulo");
+			System.out.println("3.Area del rectangulo");
+			System.out.println("4.salir");
+			System.out.println("Elija una opción: ");
+			opcion=sc.nextInt();
+		
+			switch(opcion) {
+			case 1:
+			System.out.println("AREA DEL CUADRADO");
+			int lado1=0;
+			int lado2=0;
+			System.out.println("Dame un lado del cuadrado");
+			lado1=sc.nextInt();
+			System.out.println("Dame otro lado del cuadrado");
+			lado2=sc.nextInt();
+			double areaCuadrado=lado1*lado2;
+			System.out.println("El area del cuadrado es: "+areaCuadrado);
+				break;
+			case 2:
+				System.out.println("AREA DEL CIRCULO");
+				System.out.println("Dame el radio del círculo");
+				double radio=sc.nextDouble();
+				double area=Math.PI*radio*radio;
+				System.out.println("El area del circulo es:"+area);
+				break;
+			case 3:
+				System.out.println("AREA DEL RECTANGULO");
+				int base=0;
+				int altura=0;
+				System.out.println("Dame la base del rectangulo");
+				base=sc.nextInt();
+				System.out.println("Dame la altura del rectangulo");
+				altura=sc.nextInt();
+				double areaRectangulo=base*altura;
+				System.out.println("El area del cuadrado es: "+areaRectangulo);
+				break;
+			case 4:
+				System.out.println("FIN!!");
+				break;
+			}
+		
+		
+		
+		}while(opcion!=4);
+	}
+}
